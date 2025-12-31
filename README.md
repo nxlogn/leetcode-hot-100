@@ -1,8 +1,8 @@
-# 算法学习与实践 (Algorithm Study)
+# 算法学习与实践 (Algorithm Study) (持续更新中...)
 
 👋 欢迎来到我的算法学习仓库！这里记录了我在 LeetCode 和其他平台上的刷题代码、解题思路以及相关的数据可视化分析。
 
-![Language](https://img.shields.io/badge/language-TypeScript%20%7C%20JavaScript%20%7C%20Python-blue)
+![Language](https://img.shields.io/badge/language-TypeScript%20%7C%20JavaScript-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 📂 目录结构
@@ -17,19 +17,11 @@
   针对特定厂商（如华为）的算法题或笔试题练习。
   - 目前包含：拓扑排序 (`topo.js`)。
 
-- **`leetcode/`**:  
-  LeetCode 通用解题模板或草稿。
-
-- **`result/`**:  
-  算法性能分析或结果可视化。
-  - 使用 Python (`matplotlib`) 绘制准确率、迭代次数等对比图表。
-
 ## 🚀 快速开始
 
 ### 前置要求
 
 - [Node.js](https://nodejs.org/) (用于运行 TS/JS 代码)
-- [Python](https://www.python.org/) (用于运行可视化脚本)
 
 ### 安装依赖
 
@@ -47,14 +39,6 @@ npm install -g ts-node
 
 ```bash
 ts-node coding/twoSum.ts
-```
-
-运行 Python 可视化脚本：
-
-```bash
-cd result
-pip install matplotlib numpy
-python result.py
 ```
 
 ## 📝 题目列表
