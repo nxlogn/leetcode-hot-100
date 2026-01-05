@@ -1,9 +1,9 @@
 class ListNode {
-    val: number
-    next: ListNode | null
+    val: number;
+    next: ListNode | null;
     constructor(val?: number, next?: ListNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
+        this.val = val === undefined ? 0 : val;
+        this.next = next === undefined ? null : next;
     }
 }
 
@@ -17,7 +17,11 @@ function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
 /**
  * 辅助函数：通过分治递归合并链表数组
  */
-function solve(lists: Array<ListNode | null>, left: number, right: number): ListNode | null {
+function solve(
+    lists: Array<ListNode | null>,
+    left: number,
+    right: number
+): ListNode | null {
     // 递归终止条件
     if (left === right) return lists[left];
 
@@ -34,10 +38,13 @@ function solve(lists: Array<ListNode | null>, left: number, right: number): List
 /**
  * 辅助函数:合并两个升序链表
  */
-function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+function mergeTwoLists(
+    l1: ListNode | null,
+    l2: ListNode | null
+): ListNode | null {
     const dummy = new ListNode(0);
     let curr = dummy;
-    
+
     while (l1 !== null && l2 !== null) {
         if (l1.val < l2.val) {
             curr.next = l1;
@@ -48,9 +55,9 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
         }
         curr = curr.next;
     }
-    
+
     // 连接剩余部分
     curr.next = l1 !== null ? l1 : l2;
-    
+
     return dummy.next;
 }

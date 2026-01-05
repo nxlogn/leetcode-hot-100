@@ -1,13 +1,16 @@
 class ListNode {
-    val: number
-    next: ListNode | null
+    val: number;
+    next: ListNode | null;
     constructor(val?: number, next?: ListNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
+        this.val = val === undefined ? 0 : val;
+        this.next = next === undefined ? null : next;
     }
 }
 
-function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
+function mergeTwoLists(
+    list1: ListNode | null,
+    list2: ListNode | null
+): ListNode | null {
     // 创建一个哨兵节点,next指针指向合并后链表的真正头部
     const prehead = new ListNode(-1);
 
@@ -34,4 +37,4 @@ function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode
     }
 
     return prehead.next;
-};
+}

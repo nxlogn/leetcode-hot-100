@@ -1,12 +1,12 @@
-const rl = require("readline").createInterface({ input: process.stdin });
+const rl = require('readline').createInterface({ input: process.stdin });
 var iter = rl[Symbol.asyncIterator]();
 const readline = async () => (await iter.next()).value;
 
-void async function () {
+void (async function () {
     const lines = [];
     const N = parseInt(await readline());
     for (let i = 0; i < N; i++) {
-        const line = (await readline()).trim().split(" ").map(Number);
+        const line = (await readline()).trim().split(' ').map(Number);
         lines.push(line);
     }
 
@@ -35,7 +35,7 @@ void async function () {
 
     // 处理无节点的特殊情况
     if (nodes.size === 0) {
-        console.log("0 0");
+        console.log('0 0');
         return;
     }
 
@@ -130,4 +130,4 @@ void async function () {
     }
 
     console.log(`${maxProfit} ${maxCount}`);
-}()
+})();

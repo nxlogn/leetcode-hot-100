@@ -59,4 +59,4 @@ function setZeroes(matrix: number[][]): void {
             matrix[i][0] = 0;
         }
     }
-};
+}

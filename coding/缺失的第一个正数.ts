@@ -5,10 +5,7 @@ function firstMissingPositive(nums: number[]): number {
     for (let i = 0; i < n; i++) {
         // 只处理[1,n]范围内的正整数
         // 如果没在位置上，交换
-        while (
-            nums[i] > 0 && nums[i] <= n &&
-            nums[nums[i] - 1] !== nums[i]
-        ) {
+        while (nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] !== nums[i]) {
             const targetIndex = nums[i] - 1;
             [nums[targetIndex], nums[i]] = [nums[i], nums[targetIndex]];
         }
@@ -24,5 +21,4 @@ function firstMissingPositive(nums: number[]): number {
 
     // 所有位置对应上，缺失的是n+1
     return n + 1;
-
-};
+}

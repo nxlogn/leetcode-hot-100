@@ -9,25 +9,34 @@ class TreeNode {
     }
 }
 
-function inorderTraversal(root: TreeNode | null): number[] {
-    const res: number[] = [];
+/**
+ * 在二叉搜索树中,中序遍历的结果是一个升序序列,因此,我们只需要按中序遍历的顺序访问节点,当访问到第k个节点时
+ * 更改节点的值即为答案
+ * @param root
+ * @param k
+ */
+function kthSmallest(root: TreeNode | null, k: number): number {
     const stack: TreeNode[] = [];
     let curr: TreeNode | null = root;
 
+    // 只要栈不为空或当前节点不空，就继续遍历
     while (curr !== null || stack.length > 0) {
-        // 尽可能向左走,并把路径上的节点入栈
+        // 尽可能向左走,将路径上的节点入栈
         while (curr !== null) {
             stack.push(curr);
             curr = curr.left;
         }
 
-        // 此时左边已经到底了,弹出最近的节点(当前的根)
+        // 弹出栈顶节点，当前最小的
         curr = stack.pop()!;
-        res.push(curr.val);
 
-        // 转向柚子树
+        // 计数
+        k--;
+        if (k === 0) {
+            return curr.val;
+        }
+
+        // 转向右子树
         curr = curr.right;
     }
-
-    return res;
 }

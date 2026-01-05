@@ -1,16 +1,18 @@
 {
-  "name": "algorithm",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^25.0.2",
-    "typescript": "^5.9.3"
-  }
+    "name": "algorithm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write \"**/*.{js,ts,json,md}\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^25.0.2",
+        "prettier": "^3.7.4",
+        "typescript": "^5.9.3"
+    }
 }

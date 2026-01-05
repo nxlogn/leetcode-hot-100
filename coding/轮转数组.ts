@@ -1,4 +1,4 @@
-import { stat } from "node:fs";
+import { stat } from 'node:fs';
 
 /**
  Do not return anything, modify nums in-place instead.
@@ -13,13 +13,13 @@ function rotate(nums: number[], k: number): void {
     }
 
     // reverse:固定区间的翻转
-    const reverse = (arr: number[], start:number, end:number) => {
+    const reverse = (arr: number[], start: number, end: number) => {
         while (start < end) {
             [arr[start], arr[end]] = [arr[end], arr[start]];
             start++;
             end--;
         }
-    }
+    };
 
     // 三次翻转
     reverse(nums, 0, nums.length - 1);
@@ -27,4 +27,4 @@ function rotate(nums: number[], k: number): void {
     reverse(nums, k, nums.length - 1);
 
     return;
-};
+}

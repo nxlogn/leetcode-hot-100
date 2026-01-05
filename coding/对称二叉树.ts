@@ -1,26 +1,25 @@
-
 class TreeNode {
-    val: number
-    left: TreeNode | null
-    right: TreeNode | null
+    val: number;
+    left: TreeNode | null;
+    right: TreeNode | null;
     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.left = (left === undefined ? null : left)
-        this.right = (right === undefined ? null : right)
+        this.val = val === undefined ? 0 : val;
+        this.left = left === undefined ? null : left;
+        this.right = right === undefined ? null : right;
     }
 }
 
 /**
  * 如何层层比较-->先序遍历
- * @param root 
- * @returns 
+ * @param root
+ * @returns
  */
 function isSymmetric(root: TreeNode | null): boolean {
     if (!root) return true;
 
     // 检查左右子树是否对称
     return check(root.left, root.right);
-};
+}
 
 function check(p: TreeNode | null, q: TreeNode | null): boolean {
     // 两个都为空,对称

@@ -32,4 +32,4 @@ function reverseList(head: ListNode | null): ListNode | null {
 
     // 循环结束，curr为null
     return prev;
-};
+}

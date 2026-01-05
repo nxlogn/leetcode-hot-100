@@ -2,7 +2,7 @@ function spiralOrder(matrix: number[][]): number[] {
     // 如果是空矩阵,直接返回空数组
     if (matrix.length === 0) return [];
 
-    const result:number[] = [];
+    const result: number[] = [];
 
     // 定义四个边界
     let top = 0;
@@ -26,7 +26,7 @@ function spiralOrder(matrix: number[][]): number[] {
         // 右边界左移，如果越界则结束
         right--;
         if (left > right) break;
-        
+
         // 向左移动
         for (let i = right; i >= left; i--) {
             result.push(matrix[bottom][i]);
@@ -43,4 +43,4 @@ function spiralOrder(matrix: number[][]): number[] {
     }
 
     return result;
-};
+}

@@ -1,14 +1,16 @@
 class ListNode {
-    val: number
-    next: ListNode | null
+    val: number;
+    next: ListNode | null;
     constructor(val?: number, next?: ListNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
+        this.val = val === undefined ? 0 : val;
+        this.next = next === undefined ? null : next;
     }
 }
 
-
-function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+function addTwoNumbers(
+    l1: ListNode | null,
+    l2: ListNode | null
+): ListNode | null {
     // 创建虚拟头节点
     let dummyNode: ListNode | null = new ListNode(0);
 
@@ -41,4 +43,4 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
 
     // return
     return dummyNode.next;
-};
+}

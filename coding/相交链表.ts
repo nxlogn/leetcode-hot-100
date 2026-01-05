@@ -10,7 +10,10 @@
  * }
  */
 
-function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
+function getIntersectionNode(
+    headA: ListNode | null,
+    headB: ListNode | null
+): ListNode | null {
     // 边界情况处理：如果任意链表为空，不可能相交
     if (headA === null || headB === null) {
         return null;
@@ -33,4 +36,4 @@ function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): Li
     }
 
     return pA;
-};
+}

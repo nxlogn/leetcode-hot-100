@@ -25,4 +25,4 @@ function lengthOfLongestSubstring(s: string): number {
     }
     // 返回最长子串的长度
     return maxLength;
-};
+}

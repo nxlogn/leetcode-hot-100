@@ -19,4 +19,4 @@ function productExceptSelf(nums: number[]): number[] {
     }
 
     return answer;
-};
+}

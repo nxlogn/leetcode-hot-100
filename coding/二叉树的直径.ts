@@ -1,18 +1,17 @@
-
 class TreeNode {
-    val: number
-    left: TreeNode | null
-    right: TreeNode | null
+    val: number;
+    left: TreeNode | null;
+    right: TreeNode | null;
     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.left = (left === undefined ? null : left)
-        this.right = (right === undefined ? null : right)
+        this.val = val === undefined ? 0 : val;
+        this.left = left === undefined ? null : left;
+        this.right = right === undefined ? null : right;
     }
 }
 
 /**
  * 什么是最大直径-->节点的左子树最大深度+右子树最大深度
- * @param root 
+ * @param root
  */
 function diameterOfBinaryTree(root: TreeNode | null): number {
     let maxDiamerter = 0;
@@ -36,4 +35,4 @@ function diameterOfBinaryTree(root: TreeNode | null): number {
 
     getDepth(root);
     return maxDiamerter;
-};
+}

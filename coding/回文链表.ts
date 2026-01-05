@@ -43,7 +43,7 @@ function isPalindrome(head: ListNode | null): boolean {
     }
 
     return result;
-};
+}
 
 // 辅助函数:翻转链表
 function reverseList(head: ListNode | null): ListNode | null {

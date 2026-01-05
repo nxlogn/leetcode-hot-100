@@ -1,16 +1,14 @@
 class _Node {
-    val: number
-    next: _Node | null
-    random: _Node | null
+    val: number;
+    next: _Node | null;
+    random: _Node | null;
 
     constructor(val?: number, next?: _Node, random?: _Node) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
-        this.random = (random === undefined ? null : random)
+        this.val = val === undefined ? 0 : val;
+        this.next = next === undefined ? null : next;
+        this.random = random === undefined ? null : random;
     }
 }
-
-
 
 function copyRandomList(head: _Node | null): _Node | null {
     if (!head) return null;
@@ -37,4 +35,4 @@ function copyRandomList(head: _Node | null): _Node | null {
     }
 
     return map.get(head)!;
-};
+}

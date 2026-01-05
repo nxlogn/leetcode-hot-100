@@ -30,4 +30,4 @@ function swapPairs(head: ListNode | null): ListNode | null {
     }
 
     return dummy.next;
-};
+}

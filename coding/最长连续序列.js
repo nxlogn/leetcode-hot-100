@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var longestConsecutive = function(nums) {
+var longestConsecutive = function (nums) {
     let maxLength = 0;
     // 转换为set
     const numSet = new Set(nums);
@@ -14,7 +14,7 @@ var longestConsecutive = function(nums) {
             // 从num开始，计算连续序列的长度
             let currentNum = num;
             let currentLength = 1;
-            while (numSet.has(currentNum + 1)){
+            while (numSet.has(currentNum + 1)) {
                 currentNum++;
                 currentLength++;
             }
@@ -22,7 +22,7 @@ var longestConsecutive = function(nums) {
             maxLength = Math.max(maxLength, currentLength);
         }
     }
-    
+
     // 返回maxLength
     return maxLength;
 };

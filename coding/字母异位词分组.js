@@ -2,11 +2,10 @@
  * @param {string[]} strs
  * @return {string[][]}
  */
-var groupAnagrams = function(strs) {
+var groupAnagrams = function (strs) {
     // strs本身就是空的
-    if (strs.length === 0)
-        return [[""]];
-    
+    if (strs.length === 0) return [['']];
+
     // 存储不同字母异位词
     const mp = new Map();
 

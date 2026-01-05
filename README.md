@@ -11,11 +11,11 @@
 
 - **`coding/`**:  
   核心算法题解，主要包含 LeetCode 热题。使用 TypeScript 和 JavaScript 编写。
-  - 涵盖题目：两数之和、三数之和、盛最多水的容器、最长连续序列等。
+    - 涵盖题目：两数之和、三数之和、盛最多水的容器、最长连续序列等。
 
 - **`huawei/`**:  
   针对特定厂商（如华为）的算法题或笔试题练习。
-  - 目前包含：拓扑排序 (`topo.js`)。
+    - 目前包含：拓扑排序 (`topo.js`)。
 
 ## 🚀 快速开始
 
@@ -43,19 +43,20 @@ ts-node coding/twoSum.ts
 
 ## 📝 题目列表
 
-| 题目名称 | 语言 | 类型 |
-| :--- | :---: | :--- |
-| 两数之和 (Two Sum) | TS | 数组/哈希表 |
-| 三数之和 (3Sum) | TS | 双指针 |
-| 盛最多水的容器 (Container With Most Water) | TS | 双指针 |
-| 字母异位词分组 (Group Anagrams) | JS | 哈希表 |
-| 缺失的第一个正数 (First Missing Positive) | TS | 数组 |
-| 移动零 (Move Zeroes) | JS | 双指针 |
-| ... | ... | ... |
+| 题目名称                                   | 语言 | 类型        |
+| :----------------------------------------- | :--: | :---------- |
+| 两数之和 (Two Sum)                         |  TS  | 数组/哈希表 |
+| 三数之和 (3Sum)                            |  TS  | 双指针      |
+| 盛最多水的容器 (Container With Most Water) |  TS  | 双指针      |
+| 字母异位词分组 (Group Anagrams)            |  JS  | 哈希表      |
+| 缺失的第一个正数 (First Missing Positive)  |  TS  | 数组        |
+| 移动零 (Move Zeroes)                       |  JS  | 双指针      |
+| ...                                        | ...  | ...         |
 
 ## 🤝 贡献
 
 欢迎提交 Issue 或 Pull Request 来改进代码或添加新的题解！
 
 ---
+
 Happy Coding! 🚀

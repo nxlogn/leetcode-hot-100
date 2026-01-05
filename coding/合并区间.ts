@@ -25,4 +25,4 @@ function merge(intervals: number[][]): number[][] {
 
     // return
     return merged;
-};
+}
